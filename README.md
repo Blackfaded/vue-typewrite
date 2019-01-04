@@ -35,7 +35,7 @@ Vue.use(Typewriter);
 | text       | string - required |           | the text to be typed               |
 | typeDelay  | number            | 0         | time until the text starts typing  |
 | typeSpeed  | number            | 150       | time between each char typed in ms |
-| carotColor | string            | '#101010' | color of the carot (any css color) |
+| caretColor | string            | '#101010' | color of the caret (any css color) |
 | textColor  | string            | ''inherit | color of the text (any css color)  |
 
 For multiline texts use ```\n``` for now.
