@@ -16,7 +16,7 @@ deploy:
     skip-cleanup: true
     local_dir: demo
     github-token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
-    repo: <blackfaded>/<vue-typewrite>
+    repo: blackfaded/vue-typewrite
     keep-history: true
     target-branch: master
     on:
