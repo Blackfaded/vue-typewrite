@@ -14,7 +14,7 @@ notifications:
 branches:
   only:
   - master
-before_deploy: "rm .gitignore && touch .gitignore"  
+before_deploy: "sed -i '/\/dist/d' .gitignore"  
 deploy:
   - provider: pages
     skip-cleanup: true
