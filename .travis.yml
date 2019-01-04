@@ -18,9 +18,7 @@ deploy:
     github-token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
     repo: blackfaded/vue-typewrite
     keep-history: true
-    target-branch: master
-    on:
-        branch: master
+    target-branch: gh-pages
   - provider: npm
     email: "rene.heinen@gmx.net"
     api_key: $NPM_TOKEN
