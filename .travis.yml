@@ -3,6 +3,7 @@ node_js:
     - "10"
 install:
     - npm i -g @vue/cli
+    - npm i
 script:
     - npm run build-demo
 cache:
