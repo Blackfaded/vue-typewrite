@@ -8,8 +8,8 @@
 
     </span>
     <span
-      class="carot"
-      :style="carotStyle"
+      class="caret"
+      :style="caretStyle"
       v-html="'&nbsp'"
     ></span>
   </div>
@@ -33,7 +33,7 @@ export default {
       type: Number,
       default: 150
     },
-    carotColor: {
+    caretColor: {
       type: String,
       default: '#101010'
     },
@@ -59,9 +59,9 @@ export default {
         color: this.textColor
       };
     },
-    carotStyle() {
+    caretStyle() {
       return {
-        'background-color': this.carotColor,
+        'background-color': this.caretColor,
         width: '0.10em'
       };
     }
@@ -108,7 +108,7 @@ export default {
   .writer {
     white-space: pre;
   }
-  .carot {
+  .caret {
     display: inline-block;
     font-size: inherit;
     animation: blink-caret 0.75s step-end infinite;

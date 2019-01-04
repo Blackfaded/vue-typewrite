@@ -1,8 +1,9 @@
 {
   "name": "vue-typewrite",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "description": "Typewrite text in your Vue.js application",
   "author": "Blackfaded <rene.heinen@gmx.net>",
+  "repository": "https://github.com/Blackfaded/vue-typewrite.git",
   "main": "dist/vue-typewrite.common.js",
   "scripts": {
     "serve": "vue-cli-service serve",
