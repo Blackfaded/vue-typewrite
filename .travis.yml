@@ -26,3 +26,4 @@ deploy:
   - provider: npm
     email: "rene.heinen@gmx.net"
     api_key: $NPM_TOKEN
+    skip_cleanup: true
