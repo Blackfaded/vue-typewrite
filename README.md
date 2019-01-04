@@ -2,6 +2,8 @@
 
 This Vue.js plugin emulates typing in a text.
 
+[DEMO](https://blackfaded.github.io/vue-typewrite/)
+
 ## Usage
 
 ### Installation
@@ -28,13 +30,13 @@ Vue.use(Typewriter);
 
 ### Configuration
 
-| name              | type                             | default                                                                  | description                                                                                                               |
-| ----------------- | ------------------------------- | -------- | ------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------- |
-| text          | string - required             |                                                                     | the text to be typed                                                                                  |
-| typeDelay         | number                    | 0                                                                        | time until the text starts typing                                                                                                         |
-| typeSpeed      | number                             | 150                                                                     | time between each char typed in ms                                                                                                |
-| carotColor              | string                             | '#101010'                                                                    | color of the carot (any css color)                                                                                               |
-| textColor            | string     | ''inherit | color of the text (any css color)                                                                                                |
+| name       | type              | default   | description                        |
+| ---------- | ----------------- | --------- | ---------------------------------- | 
+| text       | string - required |           | the text to be typed               |
+| typeDelay  | number            | 0         | time until the text starts typing  |
+| typeSpeed  | number            | 150       | time between each char typed in ms |
+| carotColor | string            | '#101010' | color of the carot (any css color) |
+| textColor  | string            | ''inherit | color of the text (any css color)  |
 
 For multiline texts use ```\n``` for now.
 
