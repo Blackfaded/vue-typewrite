@@ -14,8 +14,6 @@ notifications:
 branches:
   only:
   - master
-before_deploy: 
-  - rm .gitignore && touch .gitignore
 deploy:
   - provider: pages
     skip-cleanup: true
