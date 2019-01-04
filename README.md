@@ -1,26 +1,69 @@
-# typewriter
+# vue-typewrite [![npm version](https://badge.fury.io/js/vue-typewrite.svg)](https://badge.fury.io/js/vue-typewrite)
 
-## Project setup
-```
-npm install
-```
+This Vue.js plugin emulates typing in a text.
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+## Usage
 
-### Compiles and minifies for production
-```
-npm run build
+### Installation
+```bash
+npm i vue-typewrite
 ```
 
-### Run your tests
-```
-npm run test
+### in your main.js file
+
+```js
+import Vue from 'vue';
+import Typewriter from 'vue-typewrite';
+
+Vue.use(Typewriter);
 ```
 
-### Lints and fixes files
+### In your application
+
+```html
+<template>
+    <v-type-write text="Hello World!"></v-type-write>
+</template>
 ```
-npm run lint
+
+### Configuration
+
+| name              | type                             | default                                                                  | description                                                                                                               |
+| ----------------- | ------------------------------- | -------- | ------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------- |
+| text          | string - required             |                                                                     | the text to be typed                                                                                  |
+| typeDelay         | number                    | 0                                                                        | time until the text starts typing                                                                                                         |
+| typeSpeed      | number                             | 150                                                                     | time between each char typed in ms                                                                                                |
+| carotColor              | string                             | '#101010'                                                                    | color of the carot (any css color)                                                                                               |
+| textColor            | string     | ''inherit | color of the text (any css color)                                                                                                |
+
+For multiline texts use ```\n``` for now.
+
+### example
+
+```html
+<v-type-write :text="'Multiline \n is also supported'"></v-type-write>
+<v-type-write :typeDelay="150" text="I start typing after 150ms"></v-type-write>
 ```
+
+## contribute
+* clone this repo
+* `npm i` 
+* `npm run serve`
+* make changes on new branch
+* update README
+* submit PR
+
+# Todo
+- [ ] be able to delete text
+- [ ] be able to select text
+- [ ] be able to loop the writing
+- [ ] accept array of textelements
+- [ ] render html elements like `h1`, `p` etc.
+- [ ] emit events
+- [ ] customize caret (like underscore, solid, easing)
+
+## License
+
+[MIT](http://opensource.org/licenses/MIT)
+
+Copyright &copy; 2019-Present, René Heinen. All rights reserved.

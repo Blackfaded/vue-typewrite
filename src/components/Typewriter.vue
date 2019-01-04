@@ -18,6 +18,7 @@
 
 <script>
 export default {
+  name: 'v-type-writer',
   props: {
     text: {
       type: String,
@@ -38,7 +39,7 @@ export default {
     },
     textColor: {
       type: String,
-      default: '#000'
+      default: 'inherit'
     }
   },
   data() {
