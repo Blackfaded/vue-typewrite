@@ -1,6 +1,6 @@
 {
   "name": "vue-typewrite",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "Typewrite text in your Vue.js application",
   "author": "Blackfaded <rene.heinen@gmx.net>",
   "main": "dist/vue-typewrite.common.js",
